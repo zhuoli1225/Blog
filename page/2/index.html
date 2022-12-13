@@ -118,7 +118,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -148,6 +148,94 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.izhuoli.top/2022/08/30/%E7%BB%93%E6%9E%84%E4%BD%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zhuoli">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/08/30/%E7%BB%93%E6%9E%84%E4%BD%93/" class="post-title-link" itemprop="url">结构体</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-08-30 17:22:15 / 修改时间：17:26:34" itemprop="dateCreated datePublished" datetime="2022-08-30T17:22:15+08:00">2022-08-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h2><h3 id="什么是结构体"><a href="#什么是结构体" class="headerlink" title="什么是结构体"></a>什么是结构体</h3><p><strong>结构体是一种自定义的数据类型。</strong></p>
+<h3 id="定义结构体"><a href="#定义结构体" class="headerlink" title="定义结构体"></a>定义结构体</h3><p>通过struct关键字来定义结构体。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">struct name&#123;</span><br><span class="line">  //结构体所包含的成员（属性）</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>结构体是存放多种数据类型的集合。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct student&#123;</span><br><span class="line">  char *name;</span><br><span class="line">  int num;</span><br><span class="line">  int sex;</span><br><span class="line">  float score;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>上面的例子中，sutdent是结构体名，name，num，sex，score是结构体成员（也可以理解为student含有的属性）。</p>
+<h3 id="定义结构体变量"><a href="#定义结构体变量" class="headerlink" title="定义结构体变量"></a>定义结构体变量</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">struct student stu1,stu2;</span><br></pre></td></tr></table></figure>
+
+<p>这里定义了stu1和stu2两个变量，它们都<strong>属于student类型</strong>并且<strong>都有student的所有属性</strong>。</p>
+<p>也可以在定义结构体的同时定义结构体变量：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct student&#123;</span><br><span class="line">  char *name;</span><br><span class="line">  int num;</span><br><span class="line">  int sex;</span><br><span class="line">  float score;</span><br><span class="line">&#125; stu1, stu2;</span><br></pre></td></tr></table></figure>
+
+<p>像这样把变量放在结构体的最后就可以了。</p>
+<h3 id="访问结构体成员"><a href="#访问结构体成员" class="headerlink" title="访问结构体成员"></a>访问结构体成员</h3><p>使用  .  （点号）来访问结构体成员。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">结构体成员.成员名;</span><br></pre></td></tr></table></figure>
+
+<p>通过这样的方式可以<strong>给结构体成员赋值</strong>或<strong>获取结构体成员的值</strong>。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -187,7 +275,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-08-28 21:25:28 / 修改时间：21:40:33" itemprop="dateCreated datePublished" datetime="2022-08-28T21:25:28+08:00">2022-08-28</time>
+      <time title="创建时间：2022-08-28 21:25:28 / 修改时间：21:40:34" itemprop="dateCreated datePublished" datetime="2022-08-28T21:25:28+08:00">2022-08-28</time>
     </span>
 
   
